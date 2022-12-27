@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title> Seção 04 - aula 12</title>
+        <meta charset="utf-8">
+    </head>
+    
+    <body> 
+        <h1>Seção 04 - Aula 12</h1>
+        <script>
+            /*var cliente = {
+                nome: 'Maria das Graças Xuxa Meneguel',
+                email: 'xuxa@666.com',
+                telefone: '+55 11 666-6566',
+                rua: 'Rua dos Baixinhos',
+                numero: 666,
+                bairro: 'Pinheiros',
+                cidade: 'São Paulo',
+                uf: 'SP'    
+            };//objeto */
+            function mostrarCliente(){
+               return('O(a) cliente '+ this.nome + ' mora em ' + this.cidade + ', ' + this.uf + '.');
+            }
+            
+            function Cliente(nome, email, telefone, rua, numero, bairro, cidade, uf) {
+                this.nome= nome;
+                this.email = email;
+                this.telefone = telefone;
+                this.rua= rua;
+                this.numero= numero;
+                this.bairro= bairro;
+                this.cidade= cidade;
+                this.uf= uf;
+                this.mostrarCliente= mostrarCliente;
+
+                //return 'O(a) cliente'+ nome + 'mora em ' + cidade + ', ' + uf + '.';
+            }
+            
+            var cliente01 = new Cliente('dudu', 'dudu@ymail.com','55 85 96666-9666', 'rua tabajara', '666', 'Pinheiros', 'São Paulo', 'SP');
+
+            //console.log('O(a) cliente '+ cliente01.nome + ' mora em ' + cliente01.cidade + ', ' + cliente01.uf + '.');
+            //console.log(cliente01.mostrarCliente());
+            //console.log(cliente01.Cliente);
+            cliente01.mostrarCliente()
+        </script>
+    </body>
+
+</html>  
